@@ -1,0 +1,90 @@
+% !TEX TS-program = xelatex
+% !TEX encoding = UTF-8 Unicode
+% !Mode:: "TeX:UTF-8"
+
+\documentclass{resume}
+\usepackage{zh_CN-Adobefonts_external} % Simplified Chinese Support using external fonts (./fonts/zh_CN-Adobe/)
+%\usepackage{zh_CN-Adobefonts_internal} % Simplified Chinese Support using system fonts
+\usepackage{linespacing_fix} % disable extra space before next section
+\usepackage{cite}
+
+\begin{document}
+\pagenumbering{gobble} % suppress displaying page number
+
+\name{闵振南}
+
+\basicInfo{
+  \email{znmin@cqu.edu.cn} \textperiodcentered}
+ 
+\section{\faGraduationCap\  教育背景}
+\datedsubsection{\textbf{重庆大学}\ 计算机学院}{2017 -- 至今}
+\textit{工学学士}\ 信息安全，绩点3.36\ (12/50)
+
+\section{\faUsers\ 项目/实践经历}
+\datedsubsection{\textbf{第十三届国家级大学生创新训练项目 (No.201910611079)}}{2019.06 -- 2020.06}
+% \role{\LaTeX}{国创组员}
+\begin{onehalfspacing}
+参与了国创项目“基于量子 Baker 变换的量子图像安全处理算法研究”。该项目研究了基于离散 Baker 变换的图像置乱算法的广义形式。证明了离散 Baker 变换具有二进制形式的充要条件。给出了满足条件的离散 Baker 变换的参数空间大小。结题等级：良好。
+% \begin{itemize}
+%  \item 提出了离散 Baker 变换的图像置乱算法及其广义形式。
+%  \item 证明了离散 Baker 变换具有 二进制形式的充要条件，给出了满足条件的离散 Baker 变换的参数空间大小。
+% \end{itemize}
+\end{onehalfspacing}
+
+\datedsubsection{\textbf{五级流水线MIPS处理器设计}}{2019.11 -- 2019.12}
+% \role{Verilog}{课程项目，合作完成}
+\begin{onehalfspacing}
+\begin{itemize}
+    \item 使用Verilog实现五级流水线CPU，支持MIPS32中的57条指令
+    \item 通过数据前推、流水线暂停解决了数据冒险、结构冒险等问题
+    \item 编写仿真代码，对实现的CPU进行了测试
+    \item 引入外设及总线，将CPU扩展为SOC并成功上板运行
+\end{itemize}
+\end{onehalfspacing}
+
+\datedsubsection{\textbf{Forge Image Detect}}{2020.04 -- 2020.05}
+% \role{Python}{个人项目}
+\begin{onehalfspacing}
+通过一个轻量级的卷积神经网络对合成图片进行判别，其参数只有27850个，在只有100轮训练的情况下，其对deepfakes、face2face生成的图像识别准确率达到了70\%。
+\begin{itemize}
+  \item 实现了一个轻量级卷积神经网络，检测图片是否是人为合成
+  \item 该神经网络仅包含27850个参数，经过100轮训练后，对deepfake、face2face生成的图像识别准确率达到70\%
+\end{itemize}
+\end{onehalfspacing}
+
+% Reference Test
+%\datedsubsection{\textbf{Paper Title\cite{zaharia2012resilient}}}{May. 2015}
+%An xxx optimized for xxx\cite{verma2015large}
+%\begin{itemize}
+%  \item main contribution
+%\end{itemize}
+
+\section{\faCogs\ 技能}
+% increase linespacing [parsep=0.5ex]
+\begin{itemize}[parsep=0.5ex]
+  \item 编程语言: C/C++, Python, Verilog
+  \item 平台: Linux
+  \item 英语: CET-4:\ 549,\ CET-6:\ 501
+\end{itemize}
+
+\section{\faHeartO\ 获奖情况}
+\datedsubsection{\textbf{重庆大学综合奖学金}\quad 丙等两次}{2018.03 -- 2019.10}
+\datedsubsection{\textbf{重庆大学第十六届程序设计大赛}\quad 三等奖}{2019.05}
+\datedsubsection{\textbf{重庆大学第二届“信安杯”CTF竞赛}\quad 二等奖}{2019.06}
+\datedsubsection{\textbf{国家励志奖学金}}{2019.10}
+\datedsubsection{\textbf{重庆大学优秀毕业生干部}}{2020.12}
+\datedsubsection{\textbf{重庆大学优秀学生干部}}{2020.12}
+%\datedline{\textit{第一名}, xxx 比赛}{2013 年6 月}
+%\datedline{其他奖项}{2015}
+
+% \section{\faInfo\ 其他}
+% % increase linespacing [parsep=0.5ex]
+% \begin{itemize}[parsep=0.5ex]
+%   \item GitHub: https://github.com/10v1
+% \end{itemize}
+
+%% Reference
+%\newpage
+%\bibliographystyle{IEEETran}
+%\bibliography{mycite}
+\end{document}
